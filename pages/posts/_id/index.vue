@@ -23,7 +23,7 @@ export default {
           id: "1",
           title: "First Post (ID: " + context.route.params.id + ")",
           previewText: "This is our first post!",
-          author: 'han',
+          author: 'Han',
           updatedDate: new Date(),
           content: 'Some dummy text which is definitely not the preview text though!',
           thumbnail:
