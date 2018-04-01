@@ -45,7 +45,8 @@ module.exports = {
   '@nuxtjs/axios',
   ],
   axios: {
-    baseURL: process.env.BASE_URL || 'https://nuxtbloghan.firebaseio.com/',
+    baseURL: process.env.BASE_URL || 'https://bloghaeseong.firebaseio.com/',
+    // https://nuxtbloghan.firebaseio.com/    alternative server
     credentials: false
   },
 
@@ -61,8 +62,8 @@ module.exports = {
     }
   },
   env: {
-    baseUrl: process.env.BASE_URL || 'https://nuxtbloghan.firebaseio.com',
-    fbAPIKey: 'AIzaSyDabR-WrPEnx3dlv2BuwzUckJDmujW24L8'
+    baseUrl: process.env.BASE_URL || 'https://bloghaeseong.firebaseio.com/',
+    fbAPIKey: 'AIzaSyC-fCZS3pHHKDHNo_oh6qSg_BLPH5DTWrc'
   },
   transition: {
     name: 'fade',

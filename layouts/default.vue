@@ -1,25 +1,20 @@
 <template>
-  <div>
-    <TheHeader @sidenavToggle="displaySidenav = !displaySidenav" />
-    <TheSidenav
-      :show="displaySidenav"
-      @close="displaySidenav = false" />
+  <div class="container-fluid">
+    <TheNavbar/>
     <nuxt/>
   </div>
 </template>
 
 <script>
-import TheHeader from '@/components/Navigation/TheHeader'
-import TheSidenav from '@/components/Navigation/TheSidenav'
+import TheNavbar from '@/components/Navigation/TheNavbar'
 
 export default {
   components: {
-    TheHeader,
-    TheSidenav
+    TheNavbar
   },
   data() {
     return {
-      displaySidenav: false
+      //
     }
   }
 }

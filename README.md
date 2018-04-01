@@ -1,6 +1,6 @@
 # nuxt-blog
 
-> My transcendent Nuxt.js project
+> My Nuxt.js Blog project
 
 ## Build Setup
 

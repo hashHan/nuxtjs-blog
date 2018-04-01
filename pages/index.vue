@@ -1,7 +1,7 @@
 <template>
   <div class="home-page">
     <section class="intro">
-      <h1>Get the latest tech news!</h1>
+      <h1>HAESEONG HAN</h1>
     </section>
     <PostList :posts="loadedPosts" />
   </div>
@@ -40,8 +40,10 @@ export default {
   left: 5%;
   width: 90%;
   font-size: 1.5rem;
-  color: black;
-  background-color: rgb(211, 211, 211);
+  text-align: center;
+  text-shadow: 2px 2px black;
+  color: white;
+  background-color: transparent;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 3px 3px 3px black;

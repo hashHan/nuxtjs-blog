@@ -30,7 +30,7 @@ const createStore = () => {
     actions: {
       nuxtServerInit(vuexContext, context) {
         return context.app.$axios
-          .$get("/posts.json")
+          .$get("/portfolios.json")
           .then(data => {
             const postsArray = [];
             for (const key in data) {
@@ -46,8 +46,7 @@ const createStore = () => {
           updatedDate: new Date()
         };
         return this.$axios
-          .$post(
-            "https://nuxtbloghan.firebaseio.com/posts.json?auth=" +
+          .$post("/portfolios.json?auth=" +
               vuexContext.state.token,
             createdPost
           )
@@ -58,8 +57,7 @@ const createStore = () => {
       },
       editPost(vuexContext, editedPost) {
         return this.$axios
-          .$put(
-            "https://nuxtbloghan.firebaseio.com/posts/" +
+          .$put("/portfolios/" +
               editedPost.id +
               ".json?auth=" +
               vuexContext.state.token,

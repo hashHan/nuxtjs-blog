@@ -1,7 +1,7 @@
 <template>
   <section class="post-list">
     <PostPreview
-      v-for="post in posts"
+      v-for="post in posts.slice().reverse()"
       :key="post.id"
       :id="post.id"
       :is-admin="isAdmin"
@@ -41,6 +41,15 @@ export default {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  align-content: center;
+  width: 60%;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .post-list {
+    max-width: 600px;
+    width: 400px;
+  }
 }
 </style>
 

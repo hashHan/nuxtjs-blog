@@ -10,7 +10,6 @@
 import AdminPostForm from "@/components/Admin/AdminPostForm";
 
 export default {
-  layout: "admin",
   middleware: ['check-auth', 'auth'],
   components: {
     AdminPostForm
@@ -18,7 +17,7 @@ export default {
   asyncData(context) {
     return context.app.$axios
       .$get(
-        process.env.baseUrl + "/posts/" +
+        process.env.baseUrl + "/portfolios/" +
           context.params.postId +
           ".json"
       )

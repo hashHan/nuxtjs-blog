@@ -15,7 +15,6 @@
 
 <script>
 export default {
-  layout: "admin",
   middleware: ["check-auth", "auth"],
   computed: {
     loadedPosts() {
@@ -34,12 +33,20 @@ export default {
 <style scoped>
 .admin-page {
   padding: 20px;
+  align-content: center;
+  margin: auto;
 }
 
 .new-post {
   text-align: center;
   border-bottom: 2px solid #ccc;
   padding-bottom: 10px;
+}
+
+.existing-posts{
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .existing-posts h1 {
