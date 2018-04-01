@@ -4,7 +4,6 @@
     v-if="show"
     class="sidenav-backdrop"
     @click="$emit('close')"></div>
-    <!-- close sidenav when clicking background -->
   <transition name="slide-side">
     <div
       v-if="show"
@@ -12,7 +11,6 @@
       <ul
         class="nav-list"
         @click="$emit('close')">
-         <!-- close sidenav when clicking links -->
         <li class="nav-item"><nuxt-link to="/posts">Blog</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/admin">Admin</nuxt-link></li>
