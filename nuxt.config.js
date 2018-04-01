@@ -42,7 +42,12 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+  '@nuxtjs/axios',
   ],
+  axios: {
+    baseURL: process.env.BASE_URL || 'https://nuxtbloghan.firebaseio.com/',
+    credentials: false
+  },
 
   /*
   ** Build configuration
@@ -56,10 +61,14 @@ module.exports = {
     }
   },
   env: {
-    baseUrl: process.env.BASE_URL || 'https://nuxtbloghan.firebaseio.com'
+    baseUrl: process.env.BASE_URL || 'https://nuxtbloghan.firebaseio.com',
+    fbAPIKey: 'AIzaSyDabR-WrPEnx3dlv2BuwzUckJDmujW24L8'
   },
   transition: {
     name: 'fade',
     mode: 'out-in'
+  },
+  router: {
+    middleware: 'log'
   }
 }
