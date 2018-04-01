@@ -2,6 +2,8 @@
 
 > My Nuxt.js Blog project
 
+https://lychee-cake-58748.herokuapp.com/
+
 ## Build Setup
 
 ``` bash
